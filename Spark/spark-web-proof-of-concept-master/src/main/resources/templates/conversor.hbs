@@ -1,0 +1,18 @@
+	
+{{#partial "contenido"}}
+		<form method="get" action="/">
+			<h3 class="espacio-izquierdo">Super-Conversor de KM a Millas <b>by Grupo 2</b></h3>
+			<div class="col-sm-3 marginado-superior">
+				<label for="km">KM</label>
+				<input type="number" name="km" class="form-control" value={{km}} />
+				<br/>
+				<label for="millas">MILLAS</label>
+				<label name="millas" class="form-control" disabled>{{millas}}</label>
+				<br/>
+				<div class="centrado">
+					<button type="submit" class="btn btn-primary">Convertir</button>
+				</div>
+			</div>
+		</form>
+{{/partial}}
+{{> layout.hbs}}

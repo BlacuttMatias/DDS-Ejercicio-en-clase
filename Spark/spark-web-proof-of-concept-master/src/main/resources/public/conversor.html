@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Conversor</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+		<style type="text/css">
+			.espacio-izquierdo{
+				padding-left:15px;
+			}
+
+			.marginado-superior{
+				margin-top:20px;
+			}
+
+			.centrado{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get" action="/conversor/millas">
+			<h3 class="espacio-izquierdo">Super-Conversor de KM a Millas <b>by Grupo 2</b></h3>
+			<div class="col-xs-3 marginado-superior">
+				<label for="km">KM</label>
+				<input type="number" name="km" class="form-control" />
+				<br/>
+				<label for="millas">MILLAS</label>
+				<input name="millas" class="form-control" disabled="" />
+				<br/>
+				<div class="row centrado">
+					<button type="submit" class="btn btn-primary">Convertir</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
